@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+  </head>
+  <style>
+    h1 {
+      text-align: center;
+    }
+    .form {
+      display: grid;
+      justify-content: center;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      max-width: 30vw;
+      width: 100%;
+      gap: 1em;
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+    }
+    button {
+      padding: 1em;
+      color: #000;
+      background-color: rgb(255, 182, 47);
+    }
+    section {
+      display: flex;
+      justify-content: space-between;
+    }
+  </style>
+  <body>
+    <h1>Login Page</h1>
+    <div class="form">
+      <form action="/login" method="post">
+        <div>
+          <label for="email">Email</label>
+          <input type="email" name="email" required />
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input type="password" name="password" required />
+        </div>
+        <button type="submit">Login</button>
+      </form>
+      <br />
+      <section>
+        <a href="/register">Register ?</a>
+        <a href="/">Home ?</a>
+      </section>
+    </div>
+  </body>
+</html>
